@@ -1,4 +1,4 @@
-name: Build Amar Dokan App
+name: Build Amar Dukan App
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
 
       # অ্যাপ তৈরির আগে ফাইল জেনারেট করা
       - name: Recreate Android Files
-        run: flutter create --project-name amar_dokan_com .
+        run: flutter create --project-name amar_dukan_com .
 
       - name: Install Dependencies
         run: flutter pub get
@@ -37,5 +37,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: amar-dokan-app-release
+          name: amar-dukan-app-release
           path: build/app/outputs/flutter-apk/app-release.apk
