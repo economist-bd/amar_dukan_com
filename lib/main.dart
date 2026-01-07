@@ -4,18 +4,18 @@ import 'package:webview_flutter/webview_flutter.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: AmarDokanWebView(),
+    home: AmarDukanWebView(),
   ));
 }
 
 class AmarDokanWebView extends StatefulWidget {
-  const AmarDokanWebView({super.key});
+  const AmarDukanWebView({super.key});
 
   @override
-  State<AmarDokanWebView> createState() => _AmarDokanWebViewState();
+  State<AmarDukanWebView> createState() => _AmarDukanWebViewState();
 }
 
-class _AmarDokanWebViewState extends State<AmarDokanWebView> {
+class _AmarDukanWebViewState extends State<AmarDukanWebView> {
   late final WebViewController _controller;
   bool _isLoading = true; // লোডিং দেখানোর জন্য ভেরিয়েবল
 
